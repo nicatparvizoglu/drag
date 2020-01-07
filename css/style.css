@@ -1,0 +1,63 @@
+.dropArea {
+  padding: 50px;
+  font-size: 2em;
+  -webkit-box-shadow: inset 0px 0px 20px 0 #000;
+          box-shadow: inset 0px 0px 20px 0 #000;
+  border-radius: 10px;
+}
+
+.dropArea .drop {
+  padding: 50px;
+  border: 1px dashed brown;
+  text-align: center;
+  color: rgba(107, 90, 90, 0.815);
+}
+
+.dropArea .drop i {
+  display: none;
+}
+
+.dropArea .drop p {
+  pointer-events: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.dropArea .drop.active {
+  background: green;
+}
+
+.dropArea .drop.active p {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.dropArea .drop.active i {
+  display: block;
+  pointer-events: none;
+  -webkit-animation: ani 1s infinite;
+          animation: ani 1s infinite;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
